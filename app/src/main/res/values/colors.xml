@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Warm Palette -->
+    <color name="primary_warm">#D84315</color> <!-- Deep Orange 800 -->
+    <color name="primary_light_warm">#FFAB91</color> <!-- Deep Orange 200 -->
+    <color name="secondary_warm">#FF8F00</color> <!-- Amber 800 -->
+    <color name="background_warm">#FFF3E0</color> <!-- Orange 50 -->
+    <color name="surface_warm">#FFFFFF</color>
+
+    <color name="text_warm">#4E342E</color> <!-- Brown 800 for contrast -->
+</resources>

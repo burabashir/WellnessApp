@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#ECEFF1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progress Tracking"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:textColor="#263238"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/progressimage"
+            android:scaleType="centerCrop"
+            android:background="#CFD8DC"/>
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tracking Your Success\n\n1. Monitor Weight Changes\nKeep a weekly log of your weight to see long-term trends.\n\n2. Body Measurements\nTrack waist, hip, and arm measurements for a better view of body composition.\n\n3. Workout Log\nRecord your sets, reps, and weights to ensure progressive overload.\n\n4. Energy Levels\nNote how you feel each day to adjust your rest and nutrition.\n\n5. Sleep Patterns\nTrack your hours of sleep to optimize recovery and performance.\n\n6. Habit Streaks\nUse a calendar to mark off days you successfully stick to your routine.\n\n7. Photo Evidence\nTake monthly progress photos to visualize physical changes.\n\n8. Strength Milestones\nCelebrate when you hit a new personal record in the gym.\n\n9. Cardiovascular Health\nMonitor your resting heart rate and recovery time after exercise.\n\n10. Reflect and Adjust\nReview your progress every month to set new, challenging goals."
+            android:textSize="16sp"
+            android:textColor="#455A64"
+            android:lineSpacingExtra="4dp"
+            android:padding="16dp"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+</ScrollView>

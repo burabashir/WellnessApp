@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFF8E1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotivationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motivation"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:textColor="#E65100"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/motivationimage"
+            android:scaleType="centerCrop"
+            android:background="#FFE0B2"/>
+
+        <TextView
+            android:id="@+id/motivationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Inspiration &amp; Growth\n\n1. Start Small\nEvery big journey begins with a single step forward.\n\n2. Believe in Yourself\nConfidence is the first secret to achieving success.\n\n3. Stay Consistent\nDiscipline is doing what needs to be done even when you don't feel like it.\n\n4. Positive Affirmations\nReplace 'I can't' with 'I will' to change your mindset.\n\n5. Set Clear Goals\nWrite down what you want to achieve to keep your focus sharp.\n\n6. Embrace Failure\nMistakes are simply lessons on the path to improvement.\n\n7. Focus on Progress\nCelebrate how far you have come, not just how far you have to go.\n\n8. Surround Yourself with Positivity\nEnergy is contagious; spend time with people who inspire you.\n\n9. Practice Gratitude\nBeing thankful for what you have attracts more good things.\n\n10. Never Give Up\nPersistence is the difference between success and failure."
+            android:textSize="16sp"
+            android:textColor="#5D4037"
+            android:lineSpacingExtra="4dp"
+            android:padding="16dp"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#E8F5E9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Health &amp; Wellness"
+                    android:textSize="32sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#1B5E20"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Daily Healthcare Partner"
+                    android:textAlignment="center"
+                    android:textColor="#2E7D32"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="20dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image1" />
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:adSize="BANNER"
+                    app:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+                <Button
+                    android:id="@+id/health_recipes"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Healthy Recipes"
+                    android:textSize="18sp"
+                    android:drawableLeft="@drawable/diet"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#43A047"
+                    android:layout_marginTop="12dp" />
+
+                <Button
+                    android:id="@+id/nutrition_advice"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#8E24AA"
+                    android:text="Nutrition Advice"
+                    android:drawableLeft="@drawable/nutrition"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/meditation"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Meditation"
+                    android:drawableLeft="@drawable/meditation"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#5E35B1"
+                    android:layout_marginTop="12dp" />
+
+                <Button
+                    android:id="@+id/hydration_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Hydration Alert"
+                    android:drawableLeft="@drawable/hydration"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#0288D1"
+                    android:layout_marginTop="12dp" />
+
+                <Button
+                    android:id="@+id/start_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Start Exercise"
+                    android:drawableLeft="@drawable/exercise"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#F57F17"
+                    android:layout_marginTop="12dp" />
+
+                <Button
+                    android:id="@+id/daily_motivation"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Daily Motivation"
+                    android:drawableLeft="@drawable/motivation"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#FF7043"
+                    android:layout_marginTop="12dp" />
+
+                <Button
+                    android:id="@+id/weekly_goals"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Weekly Goals"
+                    android:drawableLeft="@drawable/goals"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#1976D2"
+                    android:layout_marginTop="12dp" />
+
+                <Button
+                    android:id="@+id/daily_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Daily Progress"
+                    android:drawableLeft="@drawable/progress"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#388E3C"
+                    android:layout_marginTop="12dp"/>
+
+                <Button
+                    android:id="@+id/learnmore"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Learn more"
+                    android:drawableLeft="@drawable/learnmore"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#607D8B"
+                    android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+</ScrollView>
