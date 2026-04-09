@@ -1,48 +1,436 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#F9FBE7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NutritionActivity">
+    android:background="#F9FBE7">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
+        <!-- Header Section -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nutrition"
-            android:textSize="25sp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:background="@drawable/shape"
-            android:padding="10dp"
-            android:textColor="#33691E"/>
+            android:orientation="vertical"
+            android:background="#8BC34A"
+            android:padding="20dp"
+            android:gravity="center">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🥗 Nourish Your Body"
+                android:textColor="#DCEDC8"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nutrition"
+                android:textSize="42sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Learn essential tips to eat healthy, balance your diet, and fuel your body effectively."
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:textColor="#DCEDC8"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <!-- Hero Image -->
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="300dp"
             android:src="@drawable/nutritionimage"
             android:scaleType="centerCrop"
-            android:background="#DCEDC8"/>
+            android:contentDescription="Nutrition Image"/>
 
+        <!-- Section Title -->
         <TextView
-            android:id="@+id/nutritionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nutrition Essentials &amp; Advice\n\n1. Eat Balanced Meals\nInclude proteins, healthy fats, and complex carbs in every meal.\n\n2. Prioritize Whole Foods\nChoose natural, unprocessed foods over packaged items.\n\n3. Increase Fiber Intake\nEat more beans, lentils, and whole grains for better digestion.\n\n4. Control Portion Sizes\nUse smaller plates to manage calorie intake effectively.\n\n5. Limit Added Sugars\nReduce sweets and sugary drinks to prevent energy crashes.\n\n6. Healthy Fats\nIncorporate nuts, seeds, and olive oil into your diet.\n\n7. Lean Proteins\nFocus on poultry, fish, and plant-based proteins like tofu.\n\n8. Colorful Vegetables\nAim for a variety of colors to get different vitamins and minerals.\n\n9. Mindful Eating\nPay attention to hunger cues and avoid eating while distracted.\n\n10. Preparation is Key\nPlan your meals in advance to avoid unhealthy fast food choices."
-            android:textSize="16sp"
+            android:text="Nutrition Tips"
+            android:textSize="32sp"
+            android:textStyle="bold"
             android:textColor="#33691E"
-            android:lineSpacingExtra="4dp"
-            android:padding="16dp"
-            android:background="#FFFFFF"/>
+            android:textAlignment="center"
+            android:padding="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 Key Guidelines to Eat Healthily and Boost Your Energy"
+            android:textSize="16sp"
+            android:textColor="#558B2F"
+            android:textAlignment="center"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="20dp"/>
+
+        <!-- Nutrition Tip Card Template -->
+        <!-- Tip 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍽️ Eat Balanced Meals"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#33691E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Include proteins, healthy fats, and complex carbs in every meal for proper nourishment."
+                android:textSize="16sp"
+                android:textColor="#558B2F"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#8BC34A"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Tip 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌾 Prioritize Whole Foods"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#33691E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose natural, unprocessed foods over packaged items for optimal health."
+                android:textSize="16sp"
+                android:textColor="#558B2F"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#689F38"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Tip 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🥦 Increase Fiber Intake"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#33691E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eat more beans, lentils, and whole grains for better digestion."
+                android:textSize="16sp"
+                android:textColor="#558B2F"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#689F38"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Tip 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🥛 Stay Hydrated"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#33691E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drink plenty of water and fluids to support metabolism and energy levels."
+                android:textSize="16sp"
+                android:textColor="#558B2F"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#8BC34A"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Tip 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍎 Eat Fruits &amp; Vegetables"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#33691E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Include a variety of colorful fruits and vegetables for essential vitamins and minerals."
+                android:textSize="16sp"
+                android:textColor="#558B2F"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#689F38"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Tip 6 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🥜 Include Healthy Fats"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#33691E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use nuts, seeds, and olive oil to support heart health."
+                android:textSize="16sp"
+                android:textColor="#558B2F"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#8BC34A"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Tip 7 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍵 Limit Sugar &amp; Salt"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#33691E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reduce added sugars and excessive salt for better long-term health."
+                android:textSize="16sp"
+                android:textColor="#558B2F"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#689F38"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Tip 8 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🕒 Eat on Schedule"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#33691E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maintain regular meal timings to stabilize energy and metabolism."
+                android:textSize="16sp"
+                android:textColor="#558B2F"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#8BC34A"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Tip 9 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🥤 Avoid Sugary Drinks"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#33691E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Replace sodas and sweetened drinks with water, herbal teas, or fresh juices."
+                android:textSize="16sp"
+                android:textColor="#558B2F"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#689F38"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Tip 10 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📝 Plan Meals Ahead"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#33691E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meal planning helps you make healthier choices and avoid last-minute unhealthy foods."
+                android:textSize="16sp"
+                android:textColor="#558B2F"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#8BC34A"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Reward Button -->
+        <Button
+            android:id="@+id/rewardAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Reward"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#33691E"
+            android:layout_margin="16dp"
+            android:padding="12dp"
+            android:elevation="4dp"/>
 
     </LinearLayout>
-
 </ScrollView>

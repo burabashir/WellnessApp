@@ -1,48 +1,330 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#E3F2FD"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HydrationActivity">
+    android:background="#E3F2FD">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
+        <!-- Header -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hydration"
-            android:textSize="25sp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:background="@drawable/shape"
-            android:padding="10dp"
-            android:textColor="#0D47A1"/>
+            android:orientation="vertical"
+            android:background="#0D47A1"
+            android:padding="20dp"
+            android:gravity="center">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stay Hydrated, Stay Healthy"
+                android:textColor="#BBDEFB"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hydration Tips"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Hero Image -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:src="@drawable/hydrationimages"
-            android:scaleType="centerCrop"
-            android:background="#BBDEFB"/>
+            android:scaleType="centerCrop"/>
 
+        <!-- Section Title -->
         <TextView
-            android:id="@+id/hydrationText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hydration Tips &amp; Benefits\n\n1. Drink Morning Water\nStart your day with a glass of water to jumpstart metabolism.\n\n2. Carry a Reusable Bottle\nKeep water with you at all times to encourage frequent sipping.\n\n3. Set Drinking Reminders\nUse alerts to ensure you meet your daily water intake goals.\n\n4. Eat Water-Rich Foods\nConsume cucumbers, watermelon, and oranges for extra hydration.\n\n5. Limit Sugary Drinks\nFocus on pure water instead of sodas or energy drinks.\n\n6. Hydrate Before Exercise\nDrink water 30 minutes before starting any physical activity.\n\n7. Monitor Hydration Levels\nCheck your urine color; pale yellow usually indicates good hydration.\n\n8. Drink Before Meals\nHaving water before eating can help with digestion and appetite control.\n\n9. Infuse Your Water\nAdd lemon, mint, or berries to make plain water more refreshing.\n\n10. Sip, Don't Gulp\nSmall frequent sips are better for absorption than drinking large amounts at once."
-            android:textSize="16sp"
-            android:textColor="#1565C0"
-            android:lineSpacingExtra="4dp"
-            android:padding="16dp"
-            android:background="#FFFFFF"/>
+            android:text="Top 10 Hydration Tips"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:textAlignment="center"
+            android:padding="20dp"/>
+
+        <!-- Tip 1 Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drink Morning Water"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start your day with a glass of water to jumpstart metabolism."
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tip 2 Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carry a Reusable Bottle"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keep water with you at all times to encourage frequent sipping."
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tip 3 Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Drinking Reminders"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use alerts to ensure you meet your daily water intake goals."
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tip 4 Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drink Before Meals"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have a glass of water 20–30 minutes before eating to improve digestion."
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tip 5 Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eat Water-Rich Foods"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Include fruits and vegetables like cucumber, watermelon, and oranges."
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tip 6 Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limit Sugary Drinks"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avoid sodas and sugary beverages that can dehydrate you."
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tip 7 Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drink After Exercise"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Replenish fluids lost during workouts or physical activity."
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tip 8 Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monitor Urine Color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Light yellow urine usually indicates good hydration."
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tip 9 Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drink Herbal Teas"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Herbal teas can contribute to your daily fluid intake without caffeine."
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tip 10 Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adjust for Weather &amp; Activity"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Increase water intake during hot weather or intense activity."
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
 
     </LinearLayout>
-
 </ScrollView>

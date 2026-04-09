@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:background="#E8F5E9"
@@ -42,12 +41,14 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/image1" />
 
+                <!-- Corrected AdView -->
                 <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/adView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:adSize="BANNER"
-                    app:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 
                 <Button
                     android:id="@+id/health_recipes"
